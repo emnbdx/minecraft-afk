@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "mineflayer": "^4.20.1",
+    "prismarine-viewer": "^1.28.0",
+    "telegraf": "^4.16.3"
+  }
+}
