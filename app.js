@@ -93,8 +93,7 @@ function createBot(ctx) {
     bot = mineflayer.createBot({
         host: ctx.session.server,
         username: process.env.MC_USERNAME,
-        auth: 'microsoft',
-        version: process.env.MC_VERSION
+        auth: 'microsoft'
     })
 
     bot.once('spawn', () => {
@@ -102,7 +101,6 @@ function createBot(ctx) {
             mineflayerViewer(bot, {
                 port: process.env.VIEWER_PORT,
                 firstPerson: false,
-                version: bot.version
             })
             ctx.reply('Viewer available at http://ns3206329.ip-37-187-145.eu:3007/')
         } catch {
